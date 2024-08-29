@@ -1,1 +1,2 @@
-# Multithreading_proxy_webserver
+# 
+This project implements an HTTP Proxy Server that efficiently manages client requests by acting as a bridge between clients and remote servers. It handles multiple connections simultaneously using multithreading and speeds up responses through an LRU-based caching system, which stores frequently accessed content. The server modifies headers as needed and fetches data from remote servers when not cached, while also handling errors like 400, 403, 404, and 500 with custom messages. Thread safety is ensured using semaphores and mutex locks, making the proxy reliable and efficient for caching, load balancing, and managing web traffic.
